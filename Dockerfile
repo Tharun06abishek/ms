@@ -11,6 +11,7 @@ WORKDIR /savify
 # Install dependencies and setup savify from source
 RUN pip3 install requests --upgrade
 RUN python3 setup.py install
+RUN pip3 install yt_dlp
 
 # Define environment variable as placeholder variables
 ENV SPOTIPY_CLIENT_ID=
